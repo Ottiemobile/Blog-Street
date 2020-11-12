@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
             'post_url',
             'title',
             'created_at',
-            [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id'), 'vote_count']
+            [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
         ],
         include: [
             {
@@ -28,7 +28,9 @@ router.get('/', (req, res) => {
     })
     .then(dbPostData => {
         // pass a single post object into the homepage template
-        res.render('homepage', dbPostData[0]);
+        console.log(dbPostData[0]);
+        const posts = dbPostData.map(post => post.get({ plain: true }));
+        res.render('homepage', { posts });
     })
     .catch(err => {
         console.log(err);
