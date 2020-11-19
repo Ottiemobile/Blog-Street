@@ -1,4 +1,4 @@
-/* * {
+* {
     box-sizing: border-box;
     background-color: #225ca3;
   }
@@ -36,21 +36,8 @@
     padding: 0;
   }
   
-  textarea, input {
-    padding: .5%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
   
-  textarea:focus, input:focus {
-    outline: none;
-    border: 1px solid #3486eb;
-  }
-  
-  textarea {
-    min-width: 40%;
-    min-height: 100px;
-  }
+
   
   form > div {
     margin-bottom: 2%;
@@ -70,47 +57,22 @@
   }
   
   header {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 5px solid black;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 1%;
   }
   
-  header h1 {
-    font-size: 1em;
-  }
+
   
   main {
     flex: 1;
     padding: 2% 4%;
   }
+
   
-  .btn-no-style {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    color: #225ca3;
-    font-size: 100%;
-    font-weight: bold;
-    transition: color .1s;
-    margin-left: 16px;
-  }
+
   
-  .btn-no-style:hover {
-    background: none;
-    color: #3486eb;
-  }
-  
-  .delete-post-btn {
-    background-color: #d41414;
-  }
-  
-  .delete-post-btn:hover {
-    background-color: #ff643d;
-  }
   
   .post {
     margin-bottom: 2%;
@@ -128,16 +90,8 @@
     margin: -1.5% 0 2% 0;
   }
   
-  .upvote-btn {
-    background-color: #197d0f;
 
-  }
-  
 
-  
-  .comment-form {
-    margin-bottom: 5%;
-  }
   
   .comment {
     padding: 1%;
@@ -155,17 +109,14 @@
   }
   
   .new-post-form input {
-    width: 300px;
+    width: 200px;
   }
   
-  .edit-post-form {
-    margin-bottom: 5%;
-  }
-  
+
   footer {
-    border-top: 1px solid #ccc;
+
     display: flex;
     justify-content: center;
     padding: 1%;
-    font-size: 110%;
-  } */
+    font-size: 25px;
+  }
